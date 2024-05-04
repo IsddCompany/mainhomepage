@@ -1,0 +1,22 @@
+body {
+    background-color: black;
+    color: white;
+}
+
+.maintitle{
+    overflow: hidden;
+    text-align: center;
+    
+}
+
+.maintitle > img {
+    width: 70%;
+}
+
+.greetingstext {
+    text-align: center;
+}
+
+.greetingstext > p {
+    margin-top: 0px;
+}
