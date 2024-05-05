@@ -35,19 +35,79 @@ body {
     text-align: center;
     position: relative;
     top: 100px;
+    
 }
 
 .talk-to-human > img {
     width: 60%;
 }
 
-.talk-to-human > .subtexts {
-
-}
-
 .talk-to-human > .subtexts > p {
-    position: relative;
-    top: 35px;
     margin: 0px;
     font-size: 15px;
+}
+
+.talk-to-human > .subtexts {
+    position: relative;
+    height: 100px;
+    top: 30px
+}
+
+.menu {
+    width: 800px;
+    overflow: hidden;
+    margin: 150px auto;
+    cursor: pointer;
+}
+  
+.menu > li {
+    width: 20%;
+    float: left;
+    text-align: center;
+    line-height: 40px;
+    background-color: #000000;
+}
+  
+.menu a {
+    color: #fff;
+    
+}
+.submenu {
+    height: 0; 
+    overflow: hidden;
+    transition-duration: 1s;
+    
+}
+  
+.menu > li:hover .submenu {
+    height: 100px;
+    transition-duration: 1s;
+}
+
+.menu {
+    margin: 0px;
+}
+
+.message {
+    position: ;
+    z-index: 5;
+    border: #fff solid;
+    background-color: red;
+    right: 10%;
+    width: 300px;
+    height: 300px;
+    position: absolute;
+}
+
+.message > .closebutten{
+    background-color: #000000;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    position: relative;
+    right: -56%;
 }

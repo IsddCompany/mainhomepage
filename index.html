@@ -3,12 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ISDD</title>
+    <title>ISDD Company</title>
+    <link href="https://github.com/IsddCompany/mainhomepage/blob/main/image/ico.png?raw=true" rel="shortcut icon" type="image/x-icon">
 </head>
 <body>
     <link rel="stylesheet" href="css/style.css" />
+    <div class="message">
+        <h1>After May 2020, this website will be discarded.</h1>
+        <button class="closebutten" onclick="closealert()">닫기</button>
+    </div>
+    <ul class="menu">
+          <li>
+            <p>메뉴</p>
+            <ul class="submenu">
+                <li><a href="..">ISDD home</a></li>
+                <li><a href="/servers/">ISDD server</a></li>
+            </ul>
+          </li>
+        </ul>
     <div class="maintitle" role="banner">
-        <img src="image/logo.png">
+        <img src="https://github.com/IsddCompany/mainhomepage/blob/main/image/logo.png?raw=true">
     </div>
     <div class="greetingstext">
         <h1 style="display:inline;">상</h1>
@@ -48,9 +62,15 @@
                 ISDD는 비즈니스 분야뿐만 아니라 교육, 의료, 엔터테인먼트 등 다양한 분야에서 다양한 솔루션을 제공합니다.
             </p>
         </div>
-
     </div>
-    
+        
 
 </body>
 </html>
+
+<script>
+    function closealert() {
+        message = document.getElementsByClassName("message")[0];
+        message.style.display = "none"
+    }
+</script>
