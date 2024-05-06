@@ -1,0 +1,13 @@
+body {
+    background-color: black;
+    color: white;
+}
+
+.maintitle{
+    overflow: hidden;
+    text-align: center;
+}
+
+.maintitle > img {
+    width: 60%;
+}
