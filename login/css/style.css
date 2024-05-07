@@ -11,3 +11,8 @@ body {
 .maintitle > img {
     width: 60%;
 }
+
+.login {
+    text-align: center;
+    margin: 0;
+}
