@@ -1,0 +1,48 @@
+.menu {
+    width: 800px;
+    overflow: hidden;
+    margin: 150px auto;
+    cursor: pointer;
+}
+  
+.menu > li {
+    width: 20%;
+    float: left;
+    text-align: center;
+    line-height: 40px;
+    background-color: #000000;
+}
+  
+.menu a {
+    color: #fff;
+    
+}
+.submenu {
+    height: 0; 
+    overflow: hidden;
+    transition-duration: 1s;
+    
+}
+  
+.menu > li:hover .submenu {
+    height: 100px;
+    transition-duration: 1s;
+}
+
+.menu {
+    margin: 0px;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+.maintitle{
+    overflow: hidden;
+    text-align: center;
+}
+
+.maintitle > img {
+    width: 70%;
+}

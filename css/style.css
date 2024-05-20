@@ -96,7 +96,6 @@ body {
     width: 300px;
     height: 300px;
     position: absolute;
-    display: none;
 }
 
 .message > .closebutten{
@@ -136,3 +135,30 @@ body {
         transition-duration: 1s;
     }
 }
+
+.menu > li > ul > li > .gotohome{
+    transition-duration: 1s;
+    text-decoration: none;
+    color: #fff;
+}
+
+.menu > li > ul > li > .gotoserver{
+    transition-duration: 1s;
+    text-decoration: none;
+    color: #fff;
+}
+
+.menu > li > ul > li > .gotohome:hover{
+    transition-duration: 1s;
+    text-decoration: underline;
+    font-size: larger;
+    font-weight: bold;
+}
+
+.menu > li > ul > li > .gotoserver:hover{
+    transition-duration: 1s;
+    text-decoration: underline;
+    font-size: larger;
+    font-weight: bold;
+}
+

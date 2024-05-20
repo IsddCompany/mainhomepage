@@ -18,3 +18,9 @@ function login() {
         alert("비밀번호 또는 아이디가 옳지 않습니다.")
     }
 }
+
+function regist() {
+    var local = document.location.hostname;
+    location = "../error-404"
+
+}
