@@ -12,54 +12,17 @@ body {
     width: 70%;
 }
 
-.greetingstext {
-    text-align: center;
-    position: relative;
-    top : -30px;
-}
-
-.greetingstext > p {
-    margin-top: 0px;
-}
-
-.promotion {
-    text-align: center;
-    position: relative;
-}
-
-.promotion > p {
-    margin: 0;
-}
-
-.talk-to-human {
-    text-align: center;
-    position: relative;
-    top: 100px;
-    
-}
-
-.talk-to-human > img {
-    width: 60%;
-}
-
-.talk-to-human > .subtexts > p {
-    margin: 0px;
-    font-size: 15px;
-}
-
-.talk-to-human > .subtexts {
-    position: relative;
-    height: 100px;
-    top: 30px
-}
-
 .menu {
     width: 800px;
     overflow: hidden;
     margin: 150px auto;
     cursor: pointer;
 }
-  
+
+.data{
+    text-align: center;
+}
+
 .menu > li {
     width: 20%;
     float: left;
@@ -86,54 +49,6 @@ body {
 
 .menu {
     margin: 0px;
-}
-
-.message {
-    z-index: 5;
-    border: #fff solid;
-    background-color: red;
-    right: 10%;
-    width: 300px;
-    height: 300px;
-    position: absolute;
-}
-
-.message > .closebutten{
-    background-color: #000000;
-    border: none;
-    color: white;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    cursor: pointer;
-    position: relative;
-    right: -56%;
-}
-
-.login {
-    position: relative;
-    float: right;
-    right: 10px;
-    background-color: #000000;
-    width: 80px;
-    height: 50px;
-    
-}
-.login > a {
-    position: absolute;
-    top: 25%;
-    right: 20%;
-    color: #fff;
-    text-decoration: none;
-    transition-duration: 1s;
-}
-
-.login:hover {
-    > a {
-        color: rgb(86, 86, 190);
-        transition-duration: 1s;
-    }
 }
 
 .menu > li > ul > li > .gotohome{
@@ -173,4 +88,45 @@ body {
     text-decoration: underline;
     font-size: larger;
     font-weight: bold;
+}
+
+
+.inputbox > input {
+    border: 3px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    color: white;
+    background-color: rgb(61, 61, 61);
+    width: 400px;
+    height: 50px;
+    transition-duration: 1s;
+    text-align: center;
+}
+
+.inputbox > input:not(:placeholder-shown) {
+    border: 3px solid lightgreen;
+    background-color: rgb(0, 0, 0);
+}
+
+.inputbox > input:hover {
+    border: 3px solid rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+}
+
+.inputbox > input:hover:not(:placeholder-shown) {
+    border: 3px solid lightgreen;
+    background-color: rgb(0, 0, 0);
+}
+
+
+.inputbox > input::placeholder {
+    color: white;
+    transition-duration: 1s;
+}
+
+*:focus {
+    outline: none;
+}
+
+.inputbox{
+    text-align: center;
 }

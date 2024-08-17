@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ISDD Company</title>
+    <link href="https://github.com/IsddCompany/mainhomepage/blob/main/image/ico.png?raw=true" rel="shortcut icon" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+    <ul class="menu">
+        <li>
+          <p>메뉴</p>
+          <ul class="submenu">
+            <li><a href=".." class="gotohome">ISDD home</a></li>
+            <li><a href="/servers/" class="gotoserver">ISDD server</a></li>
+            <li><a href="/serch" class="serching">제품 검색</a></li>
+          </ul>
+        </li>
+      </ul>
+    <div class="maintitle" role="banner">
+      <img src="https://github.com/IsddCompany/mainhomepage/blob/main/image/logo.png?raw=true">
+    </div>
+    <div class="inputbox">
+        <input type="search" placeholder="제품 ID를 입력해주십시오" class="serchbox" onkeyup="enterkey()">
+    </div>
+    
+    <div class="data">
+    </div>
+    <script>
+    function enterkey() {
+	    if (window.event.keyCode == 13) {
+            console.log("clicked")
+            totext(document.getElementsByClassName("serchbox")[0].value)
+    }
+}
+    </script>
+    <script src="js/main.js"> </script>
+</body>
+</html>
