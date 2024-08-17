@@ -43,7 +43,6 @@ function totext(file) {
         else if (result[3] == '3') { gender = "간성"; }
 
         let dataElement = document.getElementsByClassName("data")[0];
-        console.log(result)
         if (dataElement && result.length >= 6) {
             dataElement.innerHTML = `
                 <h1>검색결과</h1>
