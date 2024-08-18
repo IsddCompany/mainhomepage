@@ -77,13 +77,13 @@ body {
     font-weight: bold;
 }
 
-.menu > li > ul > li > .serching{
+.menu > li > ul > li > .searching{
     transition-duration: 1s;
     text-decoration: none;
     color: #fff;
 }
 
-.menu > li > ul > li > .serching:hover{
+.menu > li > ul > li > .searching:hover{
     transition-duration: 1s;
     text-decoration: underline;
     font-size: larger;

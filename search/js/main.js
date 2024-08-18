@@ -18,7 +18,12 @@ function totext(file) {
     fetch(`isdddata/${file}.isdd`)
     .then(response => {
         if (!response.ok) {
-            throw new Error(`HTTP error! status: ${response.status}`);
+            if (response.status = 404) {
+                throw new Error("파일을 찾을수 없습니다");
+            } else {
+                throw new Error(`에러!: ${response.status}`);
+            }
+            
         }
         return response.text();
     })

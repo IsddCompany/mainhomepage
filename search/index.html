@@ -14,7 +14,7 @@
           <ul class="submenu">
             <li><a href=".." class="gotohome">ISDD home</a></li>
             <li><a href="/servers/" class="gotoserver">ISDD server</a></li>
-            <li><a href="/serch" class="serching">제품 검색</a></li>
+            <li><a href="/search" class="searching">제품 검색</a></li>
           </ul>
         </li>
       </ul>
@@ -22,7 +22,7 @@
       <img src="https://github.com/IsddCompany/mainhomepage/blob/main/image/logo.png?raw=true">
     </div>
     <div class="inputbox">
-        <input type="search" placeholder="제품 ID를 입력해주십시오" class="serchbox" onkeyup="enterkey()">
+        <input type="search" placeholder="제품 ID를 입력해주십시오" class="searchbox" onkeyup="enterkey()">
     </div>
     
     <div class="data">
@@ -30,7 +30,7 @@
     <script>
     function enterkey() {
 	    if (window.event.keyCode == 13) {
-            totext(document.getElementsByClassName("serchbox")[0].value)
+            totext(document.getElementsByClassName("searchbox")[0].value)
     }
 }
     </script>
