@@ -5,10 +5,6 @@ if (URLSearch.has('search')){
     totext(URLSearch.get('search'))
 }
 
-
-// document.getElementsByClassName("searchbox")[0].value = urlParams.get('search');
-
-
 const countryCodeMap = {
     '1': '미국',
     '44': '영국',
