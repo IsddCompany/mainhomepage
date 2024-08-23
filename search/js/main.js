@@ -1,10 +1,12 @@
 const URLSearch = new URLSearchParams(location.search);
-if (URLSearch.has('search')){
 
+//url이 ?search= 를 가지고 있다면 totext(search갑) 
+if (URLSearch.has('search')){
     document.getElementsByClassName("searchbox")[0].value = URLSearch.get('search');
     totext(URLSearch.get('search'))
 }
 
+//국가 코드 맵인데 대안을 찾아야 할거 가틈;
 const countryCodeMap = {
     '1': '미국',
     '44': '영국',
@@ -16,13 +18,20 @@ const countryCodeMap = {
     '62': '인도네시아',
 };
 
+//이 함수가 불러지면 키가 엔터키인지 확인후 위치를 isdd.kro.kr/search?search=<d
+function enterkey() {
+    if (window.event.keyCode == 13) {
+    location.href = `https://isdd.kro.kr/search?search=${document.getElementsByClassName("searchbox")[0].value}`
+  }
+}
+
+
 
 function getCountryNameFromCode(code) {
     return countryCodeMap[code];
 }
 
-function totext(file) {
-    
+function totext(file) { 
     fetch(`https://raw.githubusercontent.com/IsddCompany/isdddatas/main/isdddatas/${file}.isdd`)
     .then(response => {
         if (!response.ok) {
