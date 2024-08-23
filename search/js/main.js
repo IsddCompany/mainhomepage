@@ -83,7 +83,12 @@ function totext(file) {
     .catch(error => {
         let dataElement = document.getElementsByClassName("data")[0];
         if (dataElement) {
-            dataElement.innerHTML = `<p>파일을 불러오는 중 오류가 발생했습니다: ${error.message}</p>`;
+            if (error.message == '파일을 찾을수 없습니다') {
+                dataElement.innerHTML = `<p>${error.message}</p>`;
+            } else {
+                dataElement.innerHTML = `<p>파일을 불러오는 중 오류가 발생했습니다: ${error.message}</p>`;
+            }
+            
         }
     });
 }
