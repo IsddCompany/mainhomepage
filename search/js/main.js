@@ -26,7 +26,7 @@ function getCountryNameFromCode(code) {
 }
 
 function totext(file) {
-    location.href = `https://isdd.kro.kr/search?search=${file}`
+    
     fetch(`https://raw.githubusercontent.com/IsddCompany/isdddatas/main/isdddatas/${file}.isdd`)
     .then(response => {
         if (!response.ok) {
