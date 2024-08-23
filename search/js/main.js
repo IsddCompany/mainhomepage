@@ -1,3 +1,14 @@
+const URLSearch = new URLSearchParams(location.search);
+if (URLSearch.has('search')){
+
+    document.getElementsByClassName("searchbox")[0].value = URLSearch.get('search');
+    totext(URLSearch.get('search'))
+}
+
+
+// document.getElementsByClassName("searchbox")[0].value = urlParams.get('search');
+
+
 const countryCodeMap = {
     '1': '미국',
     '44': '영국',
@@ -15,6 +26,7 @@ function getCountryNameFromCode(code) {
 }
 
 function totext(file) {
+    location.href = `https://isdd.kro.kr?search=${file}`
     fetch(`https://raw.githubusercontent.com/IsddCompany/isdddatas/main/isdddatas/${file}.isdd`)
     .then(response => {
         if (!response.ok) {
