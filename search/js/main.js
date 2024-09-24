@@ -16,6 +16,7 @@ const countryCodeMap = {
     '91': '인도',
     '86': '중국',
     '62': '인도네시아',
+    '299': '그린란드',
 };
 
 //이 함수가 불러지면 키가 엔터키인지 확인후 위치를 isdd.kro.kr/search?search=<d
