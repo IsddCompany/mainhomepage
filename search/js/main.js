@@ -50,6 +50,7 @@ function totext(file) {
         let finalText = atob(text);
 
         let a = finalText.split(' ');
+        console.log(a)
         const result = a.map(item => {
             if (item.startsWith('GenderType:')) {
                 return item.split(':')[1];
