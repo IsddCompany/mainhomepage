@@ -33,7 +33,7 @@ function getCountryNameFromCode(code) {
 }
 
 function totext(file) { 
-    fetch(`https://raw.githubusercontent.com/IsddCompany/isdddatas/main/isdddatas/${file}.idc`)
+    fetch(`https://raw.githubusercontent.com/IsddCompany/isdddatas/main/isdddatas/${file}.isdo`)
     .then(response => {
         if (!response.ok) {
             if (response.status = 404) {
